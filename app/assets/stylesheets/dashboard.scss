@@ -1,0 +1,442 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.custom-audience-wrapper {
+  min-height: 500px;
+}
+
+.custom-audience {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+  width: 1000px;
+  min-width: 350px;
+  max-width: 1550px;
+  margin-top: 25px;
+}
+
+.custom-audience-modal{
+  .well{
+    padding: 21px;
+  }
+}
+
+.newoverflow{
+  overflow: auto;
+}
+
+.fullpage {
+  width: 100% !important;
+  height: 80% !important;
+}
+.backgroundimage{
+  background-image: image-url("coursera.png");
+}
+
+.newmargin{
+  float: right;
+  margin-top: -97px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin-left: 500px;
+  margin-top: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.bmargin20{
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.leftNavigation {
+    display: block;
+    position: fixed;
+    width: 80%;
+    height: 65%;
+    top: 30%;
+    margin-left: 10%;
+    overflow: auto;
+    background-color: gray;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.inputField {
+    display: block;
+    width: 80%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-left: 10%;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.custom-audience-container {
+
+    border-radius: 10px;
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    min-width: 350px;
+    max-width: 692px;
+    min-height: 280px !important;
+}
+
+.custom-audience-row
+{
+  padding: 3px 10px 2px !important
+}
+
+.modal-content-1
+{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  left: 95px;
+  border-radius: 5px;
+}
+
+.tbody_table{
+  padding: 8px 20px !important;
+}
+
+.lmargin10{
+  margin-left:10px;
+}
+
+.tmargin10{
+  margin-top:10px;
+}
+
+.tmargin30{
+  margin-top:40px !important;
+}
+
+.lmargin35{
+  margin-left:35%;
+}
+
+.width20{
+  width: 20%;
+}
+
+.new-class {
+  tags-input .tags .input {
+    min-width: 500px;
+    border: 0;
+    outline: none;
+    margin: 2px;
+    padding: 0;
+    padding-left: 5px;
+    float: left;
+    height: 26px;
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+}
+
+.aud-menu {
+    position: absolute;
+    width: 94% !important;
+    display: block !important;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    max-height: 200px;
+    overflow: auto;
+     cursor: pointer;
+    .search-list-item{
+    &:hover {
+      background-color: gainsboro;
+    }
+  }
+}
+.width67{
+    display: block;
+    width: 66%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.margin_top10{
+    margin-top: 15px;
+}
+
+.button-style{
+  height: 40px;
+  width: 170px;
+  margin-right: -9px;
+}
+.margin10{
+  margin-top: 20px;
+}
+
+.days_input{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-radius: 50px;
+    width: 60px;
+    height: 34px;
+}
+
+.country_input{
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.drop-down-url
+{
+
+    height: 33px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    padding-left: 5px;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lpadding40 {
+  padding-left: 40px !important;
+}
+
+.lpadding10 {
+  padding-left: 20px !important;
+}
+
+.lpadding45 {
+  padding-left: 45px !important;
+}
+
+.col4 {
+      width: 80px;
+ }
+ .col7 {
+      width: 200px;
+ }
+
+ .colx {
+      width: 5px;
+ }
+
+.url_input_tags {
+      width: 330px !important;
+      margin-left: 210px;
+      margin-top: -34px;
+ }
+
+.col3{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width:80px;
+    height: 34px;
+}
+
+.conversion-pixel{
+  .dropdown-toggle {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-color: #D6D6D6;
+}
+.btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus
+{
+background-color: white;
+    color: black;
+        border-color: #D6D6D6;
+  }
+.btn-primary{
+  font-weight: normal;
+  text-align: left;
+}
+.dropdown-menu{
+      width: 100%;
+}
+.caret{
+    float: right;
+    margin-right: -7px;
+    margin-top: 7px;
+}
+.red{
+  color:red;
+  opacity:0.5;
+}
+.green{
+  color: green;
+  opacity:0.5;
+}
+.yellow{
+  color: yellow;
+  opacity:0.5;
+}
+.glyphicon {
+    top: 3px;
+    right: 7px;
+}
+.ad_tooltips {
+    border: 1px solid #645959;
+    margin-left: 4px;
+}
+.tooltip-custom-aud{
+    position: absolute;
+    right: -23px;
+    top: 5px;
+}
+
+}
+
+.alert-border-startarray{
+  border-color: red !important;
+}
+
+.alert-border-endarray{
+  border-color: red !important;
+}
+
+.conversion-pixel-btn-color{
+  color:black !important;
+}
+
+.web-audience-rule-margin{
+  margin-left: -15px;
+}
+
+.url-tags_web-audience{
+  margin-left: -27px;
+}
+
+.web-audience-rule-cancel{
+  top: 1px;
+  left: -1px;
+}
+
+.web-audience-cancel-button{
+  margin-top: 10px;
+  border-radius: 30px;
+  margin-left: -5px;
+}
+
+.lookalike-aud-dropdown{
+  overflow: auto;
+  max-height: 200px;
+}
+
+.lookalike-range-remove{
+  margin-left: 10px;
+  margin-right: 5px;
+  border-radius: 22px;
+  height: 34px;
+}
+
+.conversion-pixel{
+   .dropdown-toggle {
+     background-color: white;
+     color: black;
+     width: 100%;
+     border-color: #D6D6D6;
+ }
+ .btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus
+ {
+   background-color: white;
+   color: black;
+   border-color: #D6D6D6;
+   }
+ .btn-primary{
+   font-weight: normal;
+   text-align: left;
+ }
+ .dropdown-menu{
+       width: 100%;
+ }
+ .caret{
+     float: right;
+     margin-right: -7px;
+     margin-top: 7px;
+ }
+ .red{
+   color:red;
+   opacity:0.5;
+ }
+ .green{
+   color: green;
+   opacity:0.5;
+ }
+ .yellow{
+   color: yellow;
+   opacity:0.5;
+ }
+ .glyphicon {
+     top: 3px;
+     right: 7px;
+ }
+ .ad_tooltips {
+     border: 1px solid #645959;
+     margin-left: 4px;
+ }
+ .tooltip-custom-aud{
+     position: absolute;
+     right: -23px;
+     top: 5px;
+ }
+}
+.conversion-pixel-btn-color{
+   color:black !important;
+ }

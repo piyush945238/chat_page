@@ -1,0 +1,50 @@
+<!-- Navigation -->
+<div>
+  <img src="assets/courseralogo.png" height="42" width="230">
+</div>
+<nav class="fullpage backgroundimage " role="navigation">
+    <div  class="newoverflow" ng-controller="dashboard">
+
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">{{message}}</a>
+        </div>
+        <div>
+          <input type="text" class="inputField tmargin30" placeholder="enter course to search" ng-model="search_text">
+
+        <button class="btn btn-default-gray lmargin35 width20 tmargin10 bmargin20" type="button" ng-click="getCookie()">Search Course</button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="loader" ng-show="loader_display === true"></div>
+        <div ng-if="courses_list.elements.length > 0 && loader_display === false">
+      <section>
+        <div class=" leftNavigation">
+          <table id="facebook_ad_account" class="table account-table">
+            <tr class="list-group-item" ng-repeat="courses in courses_list.elements track by $index" >
+              <td>
+                <span><label>Name</label></span><span class="lmargin10">{{courses.name}}
+                </span>
+                <br/>
+                <span><label>Partner</label></span><span ng-repeat="partner in partners_list.elements" ng-if="courses.partnerIds[0] === partner.id" class="lmargin10">{{partner.name}}</span>
+                <br/>
+                <span><label>Instructors</label><span ng-repeat="instructor in instructor_list.elements" ng-show="courses.instructorIds[0] === instructor.id || courses.instructorIds[1] === instructor.id" class="lmargin10">{{instructor.fullName}}</span>
+                <br/>
+              </td>
+              <td class="newmargin">
+                <img src="assets/partner.png" height="90" width="150">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
